@@ -14,7 +14,7 @@ if (Argv.help || Argv.h) {
 }
 
 if (!Argv._[0]) {
-    Logger.log("The command parameter is required.", "error");
+    return Logger.log("The command parameter is required.", "error");
 }
 
 Regarde(Argv._[0], Argv.interval || Argv.n);
