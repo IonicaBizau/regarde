@@ -1,0 +1,14 @@
+regarde --help
+A tiny tool and library to watch commands.
+
+usage: regarde [command] [options]
+
+command:                  The command to watch.
+options:
+  -h --help               Displays this help.
+  -n, --interval <secs>   Seconds to wait between updates.
+
+examples:
+    regarde 'ls'
+
+Documentation can be found at https://github.com/IonicaBizau/regarde

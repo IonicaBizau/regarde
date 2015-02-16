@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+// Dependencies
+var Regarde = require("../lib")
+  , Argv = require("yargs").argv
+  , Logger = require("bug-killer")
+  ;
+
+// Configurations
+Logger.config.displayDate = false;
+
+if (Argv.help || Argv.h) {
+    return console.log(Fs.readFileSync(__dirname + "/docs/help", "utf-8"));
+}
+
+if (!Argv._[0]) {
+    Logger.log("The command parameter is required.", "error");
+}
+
+Regarde(Argv._[0], Argv.interval || Argv.n);
