@@ -4,6 +4,7 @@
 var Regarde = require("../lib")
   , Argv = require("yargs").argv
   , Logger = require("bug-killer")
+  , Fs = require("fs")
   ;
 
 // Configurations
