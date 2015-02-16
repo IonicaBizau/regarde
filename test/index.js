@@ -1,3 +1,3 @@
 var Regarde = require("../lib");
 
-Regarde("git stats")
+Regarde("date +%s%N", 0.1)
