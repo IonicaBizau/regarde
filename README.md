@@ -1,98 +1,52 @@
-![](http://i.imgur.com/RywSCbL.png)
+# `$ regarde` [![Support this project][donate-now]][paypal-donations]
 
-# `$ regarde`
 A tiny tool and library to watch commands.
 
 ## Installation
 
+You can install the package globally and use it as command line tool:
+
 ```sh
-$ npm install -g regarde
+$ npm i -g regarde
 ```
 
-## Usage
-```sh
-$ regarde -h
-regarde --help
-A tiny tool and library to watch commands.
-
-usage: regarde [command] [options]
-
-command:                  The command to watch.
-options:
-  -h --help               Displays this help.
-  -n, --interval <secs>   Seconds to wait between updates.
-
-examples:
-    regarde 'ls'
-
-Documentation can be found at https://github.com/IonicaBizau/regarde
-```
+Then, run `regarde --help` and see what the CLI tool can do.
 
 ## Example
-### Using as executable
+
+Here is an example how to use this package as library. To install it locally, as library, you can do that using `npm`:
+
 ```sh
-# Shows the number of nano seconds
-$ regarde 'date +%s%N' -n 0.1
+$ npm i regarde
 ```
 
-## Using as library
-
 ```js
+// Dependencies
 var Regarde = require("regarde");
+
 Regarde("date +%s%N", 0.1)
+// <milliseconds>
 ```
 
 ## Documentation
-### `Regarde(cmd, interval, out)`
-Creates a new instance of regarde.
 
-#### Params
-- **String|Object** `cmd`: The string representing the command that should be watched or an object containing the following fields:
- - `cmd` (String): The command that should be watched.
- - `interval` (Number): The interval in seconds.
- - `out` (Stream): The `Regarde` instance.
-
-- **Number** `interval`: The interval in seconds.
-- **Stream** `out`: The output stream (default: `process.stdout`).
-
-#### Return
-- **Regarde** The `Regarde` instance.
-
-### `run()`
-Updates the output in the output stream.
-
-#### Return
-- **Regarde** The `Regarde` instance.
-
-### `exec(cmd, cmd, callback)`
-Executes the provided command.
-
-#### Params
-- **String** `cmd`:
-- **String** `cmd`: The command that should be executed.
-- **Function** `callback`: The callback function.
-
-#### Return
-- **Exec** The Exec process.
-
-### `clear(lines)`
-Moves the cursor at the start.
-
-#### Params
-- **Number** `lines`: How many lines to clear from output stream.
-
-#### Return
-- **Regarde** The `Regarde` instance.
+For full API reference, see the [DOCUMENTATION.md][docs] file.
 
 ## How to contribute
-1. File an issue in the repository, using the bug tracker, describing the
-   contribution you'd like to make. This will help us to get you started on the
-   right foot.
-2. Fork the project in your account and create a new branch:
-   `your-great-feature`.
-3. Commit your changes in that branch.
-4. Open a pull request, and reference the initial issue in the pull request
-   message.
+Have an idea? Found a bug? See [how to contribute][contributing].
+
+## Where is this library used?
+If you are using this library in one of your projects, add it in this list. :sparkles:
 
 ## License
-See the [LICENSE](./LICENSE) file.
+
+[KINDLY][license] © [Ionică Bizău][website]
+
+[license]: http://ionicabizau.github.io/kindly-license/?author=Ionic%C4%83%20Biz%C4%83u%20%3Cbizauionica@gmail.com%3E&year=2015
+
+[website]: http://ionicabizau.net
+[paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVXDDLKKLQRJW
+[donate-now]: http://i.imgur.com/6cMbHOC.png
+
+[contributing]: /CONTRIBUTING.md
+[docs]: /DOCUMENTATION.md
