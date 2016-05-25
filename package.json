@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "bug-killer": "^1.0.0",
-    "yargs": "^3.0.4",
-    "ul": "^1.1.0"
+    "typpy": "^2.3.3",
+    "ul": "^1.1.0",
+    "yargs": "^3.0.4"
   },
   "devDependencies": {},
   "scripts": {
