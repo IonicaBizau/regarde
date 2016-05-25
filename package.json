@@ -1,6 +1,6 @@
 {
   "name": "regarde",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A tiny tool and library to watch commands.",
   "main": "lib/index.js",
   "bin": "./bin/regarde",
@@ -31,5 +31,17 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/regarde/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/regarde"
+  "homepage": "https://github.com/IonicaBizau/regarde",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "scripts/",
+    "cli.js",
+    "index.js"
+  ]
 }
