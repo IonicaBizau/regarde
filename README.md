@@ -1,24 +1,52 @@
-# `$ regarde` [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/regarde.svg)](https://www.npmjs.com/package/regarde) [![Downloads](https://img.shields.io/npm/dt/regarde.svg)](https://www.npmjs.com/package/regarde) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+
+# `$ regarde`
+
+ [![Patreon](https://img.shields.io/badge/Support%20me%20on-Patreon-%23e6461a.svg)][patreon] [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/regarde.svg)](https://www.npmjs.com/package/regarde) [![Downloads](https://img.shields.io/npm/dt/regarde.svg)](https://www.npmjs.com/package/regarde) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > A tiny tool and library to watch commands.
 
-## Installation
+## :cloud: Installation
 
 You can install the package globally and use it as command line tool:
+
 
 ```sh
 $ npm i -g regarde
 ```
 
+
 Then, run `regarde --help` and see what the CLI tool can do.
 
-## Example
+
+```
+$ regarde --help
+regarde --help
+A tiny tool and library to watch commands.
+
+usage: regarde [command] [options]
+
+command:                  The command to watch.
+options:
+  -h --help               Displays this help.
+  -n, --interval <secs>   Seconds to wait between updates.
+
+examples:
+    regarde 'ls'
+
+Documentation can be found at https://github.com/IonicaBizau/regarde
+
+```
+
+## :clipboard: Example
+
 
 Here is an example how to use this package as library. To install it locally, as library, you can do that using `npm`:
 
 ```sh
 $ npm i --save regarde
 ```
+
+
 
 ```js
 // Dependencies
@@ -28,20 +56,29 @@ Regarde("date +%s%N", 0.1)
 // <milliseconds>
 ```
 
-## Documentation
+## :memo: Documentation
 
 For full API reference, see the [DOCUMENTATION.md][docs] file.
 
-## How to contribute
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
-If you are using this library in one of your projects, add it in this list. :sparkles:
 
-## License
+## :moneybag: Donations
+
+Another way to support the development of my open-source modules is
+to [set up a recurring donation, via Patreon][patreon]. :rocket:
+
+[PayPal donations][paypal-donations] are appreciated too! Each dollar helps.
+
+Thanks! :heart:
+
+
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
+[patreon]: https://www.patreon.com/ionicabizau
 [paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVXDDLKKLQRJW
 [donate-now]: http://i.imgur.com/6cMbHOC.png
 

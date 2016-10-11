@@ -3,7 +3,9 @@
   "version": "1.2.4",
   "description": "A tiny tool and library to watch commands.",
   "main": "lib/index.js",
-  "bin": "./bin/regarde",
+  "bin": {
+    "regarde": "./bin/regarde"
+  },
   "directories": {
     "test": "test"
   },
