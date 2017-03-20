@@ -1,6 +1,6 @@
 {
   "name": "regarde",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "A tiny tool and library to watch commands.",
   "main": "lib/index.js",
   "bin": {
@@ -29,7 +29,7 @@
     "command",
     "output"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/regarde/issues"
@@ -39,12 +39,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ]
