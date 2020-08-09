@@ -1,6 +1,6 @@
 {
   "name": "regarde",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "description": "A tiny tool and library to watch commands.",
   "main": "lib/index.js",
   "bin": {
