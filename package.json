@@ -1,6 +1,6 @@
 {
   "name": "regarde",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "A tiny tool and library to watch commands.",
   "main": "lib/index.js",
   "bin": {
@@ -46,6 +46,8 @@
     "menu/",
     "cli.js",
     "index.js",
+    "index.d.ts",
+    "package-lock.json",
     "bloggify.js",
     "bloggify.json",
     "bloggify/"
